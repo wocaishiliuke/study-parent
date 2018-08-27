@@ -1,4 +1,4 @@
-# study_parent
+# study-parent
 
 方便学习中maven项目的依赖管理，创建该Maven POM工程
 
