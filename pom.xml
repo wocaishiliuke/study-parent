@@ -23,7 +23,7 @@
 		<joda-time.version>2.5</joda-time.version>
 		<httpclient.version>4.3.5</httpclient.version>
 		<jackson-databind.version>2.9.5</jackson-databind.version>
-
+		<fastjson.version>1.2.51</fastjson.version>
 	</properties>
 
 	<dependencyManagement>
@@ -188,6 +188,11 @@
             	<artifactId>jackson-databind</artifactId>
             	<version>${jackson-databind.version}</version>
         	</dependency>
+        	<dependency>
+	            <groupId>com.alibaba</groupId>
+	            <artifactId>fastjson</artifactId>
+	            <version>${fastjson.version}</version>
+	        </dependency>
 
 		</dependencies>
 	</dependencyManagement>
