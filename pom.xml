@@ -226,14 +226,14 @@
 			  	<artifactId>shiro-web</artifactId>
 			  	<version>${shiro.version}</version>
 			</dependency>
-		</dependencies>
 
-		<!-- Jedis -->
-		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-			<version>${jedis.version}</version>
-		</dependency>
+			<!-- Jedis -->
+			<dependency>
+				<groupId>redis.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>${jedis.version}</version>
+			</dependency>
+		</dependencies>
 	</dependencyManagement>
 	
 	<build>
