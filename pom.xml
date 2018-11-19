@@ -27,6 +27,7 @@
 		<commons-fileupload.version>1.3.3</commons-fileupload.version>
 		<shiro.version>1.3.2</shiro.version>
 		<aspectjweaver.version>1.9.2</aspectjweaver.version>
+		<jedis.version>2.9.0</jedis.version>
 	</properties>
 
 	<dependencyManagement>
@@ -226,6 +227,13 @@
 			  	<version>${shiro.version}</version>
 			</dependency>
 		</dependencies>
+
+		<!-- Jedis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>${jedis.version}</version>
+		</dependency>
 	</dependencyManagement>
 	
 	<build>
