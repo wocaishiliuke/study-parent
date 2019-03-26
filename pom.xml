@@ -8,6 +8,8 @@
   <!-- 依赖版本号 -->
 	<properties>
 		<junit.version>4.10</junit.version>
+		<commons-logging.version>1.2</commons-logging.version>
+		<log4j.version>1.2.17</log4j.version>
 		<slf4j.version>1.7.25</slf4j.version>
 		<spring.version>4.3.22.RELEASE</spring.version>
 		<mysql.version>5.1.38</mysql.version>
@@ -41,6 +43,18 @@
 			</dependency>
 			
 			<!-- 日志 -->
+			<!-- JCL+log4j -->
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>${commons-logging.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>log4j</groupId>
+			    <artifactId>log4j</artifactId>
+			    <version>${log4j.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
