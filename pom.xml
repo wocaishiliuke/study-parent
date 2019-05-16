@@ -10,7 +10,10 @@
 		<junit.version>4.12</junit.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<log4j.version>1.2.17</log4j.version>
-		<slf4j.version>1.7.25</slf4j.version>
+		<slf4j-api.version>1.7.25</slf4j-api.version>
+		<logback-core.version>1.2.3</logback-core.version>
+		<logback-classic.version>1.2.3</logback-classic.version>
+		<slf4j-log4j12.version>1.7.25</slf4j-log4j12.version>
 		<spring.version>4.3.22.RELEASE</spring.version>
 		<mysql.version>5.1.38</mysql.version>
 		<hikari.version>3.1.0</hikari.version>
@@ -56,11 +59,27 @@
 			    <artifactId>log4j</artifactId>
 			    <version>${log4j.version}</version>
 			</dependency>
+			<!-- slf4j门面+logback实现 -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j-api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>${logback-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback-classic.version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
-				<version>${slf4j.version}</version>
+				<version>${slf4j-log4j12.version}</version>
 			</dependency>
 
 			<!-- Spring -->
